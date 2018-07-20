@@ -4,6 +4,7 @@
 </head>
 <body>
   <h1> Today </h1>
-  <p>The date is <%= DateTime.parse(DateTime.now)%></p>
+  <p>The date is <%= today = DateTime.now%>
+  <%= today.strftime("%A, %B %-d, %Y")%>.</p>
 </body>
 </html>
